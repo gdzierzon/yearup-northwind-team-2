@@ -31,7 +31,8 @@
       <main class="container m-5">
        
 
-        <div class="col-3">
+        <div class="row">
+          <section class="col-3">
             <div>
                 <select class="form-select" name="selectProduct" id="selectProduct">
                     <option value="0">Select Product</option>
@@ -44,10 +45,25 @@
                     <option value="0">Select Category</option>
                 </select>
             </div>
-        </div>
+        </section>
 
-        <div class="col-8">
-            
+        <section class="col-9">
+            <div class="display-container row row-cols-1 row-cols-md-2 g-4">
+              <div class="col" id="productContainer">
+                <div class="card">
+                  <div class="card-header fw-bold fs-3">
+                    Chai
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Beverages</h5>
+                    <p class="card-text">Price: <span class="fw-medium">$18</span></p>
+                    <a href="#" class="btn btn-primary">See Details</a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+        </section>
         </div>
 
       </main>
