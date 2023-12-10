@@ -28,7 +28,7 @@
               </li>
       </nav>
 
-      <main class="container m-5">
+      <main class="container mt-5">
        
 
         <div class="row">
@@ -45,25 +45,28 @@
                     <option value="0">Select Category</option>
                 </select>
             </div>
-        </section>
+          </section>
 
-        <section class="col-9">
-            <div class="display-container row row-cols-1 row-cols-md-2 g-4">
-              <div class="col" id="productContainer">
-                <div class="card">
-                  <div class="card-header fw-bold fs-3">
-                    Chai
+          <section class="col-9">
+              <div class="display-container row row-cols-1 row-cols-md-2 g-4" id="productsContainer">
+                
+                <template id="productContainerTemplate">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-header fw-bold fs-3" id="productName">
+                        Chai
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title" id="productCategory">Beverages</h5>
+                        <p class="card-text">Price: $<span class="fw-medium" id="productPrice">18</span></p>
+                        <!-- <a href="#" class="btn btn-primary">See Details</a> -->
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Beverages</h5>
-                    <p class="card-text">Price: <span class="fw-medium">$18</span></p>
-                    <a href="#" class="btn btn-primary">See Details</a>
-                  </div>
-                </div>
+                </template>
+
               </div>
-  
-            </div>
-        </section>
+          </section>
         </div>
 
       </main>
